@@ -1,0 +1,10 @@
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened="true">
+    <mat-chip-list class="mat-chip-list-stacked">
+      <mat-chip *ngFor="let room of rooms" selected="true" [color]="accent">
+        {{room.name}}
+      </mat-chip>
+    </mat-chip-list>
+  </mat-drawer>
+  <mat-drawer-content>Placeholder for Messages</mat-drawer-content>
+</mat-drawer-container>

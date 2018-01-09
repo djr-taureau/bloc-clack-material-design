@@ -1,0 +1,8 @@
+<div *ngIf="room$ | async as room">
+  <i *ngIf="room.loading" class="fa fa-spin fa-refresh"></i>
+  <h2>{{ room.name }}</h2>
+  <h4>setting: {{ room.isPrivate }}</h4>
+  <h4>setting: {{ room.isActive }}</h4>
+</div>
+
+<button (click)="getRoom()">Load Room</button>

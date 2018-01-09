@@ -1,0 +1,45 @@
+<mat-toolbar color="primary">
+<button mat-icon-button [matMenuTriggerFor]="menu">
+  <mat-icon><i class="material-icons">menu</i></mat-icon>
+</button>
+<span>BlocClak</span>
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <mat-icon><i class="material-icons">add</i></mat-icon>
+    <mat-icon><i class="material-icons">delete</i></mat-icon>
+    <span>ClakRoom</span>
+  </button>
+  <mat-divider></mat-divider>
+  <button mat-menu-item>
+    <mat-icon><i class="material-icons">person_add</i></mat-icon>
+    <mat-icon><i class="material-icons">delete</i></mat-icon>
+    <span>User</span>
+  </button>
+  <mat-divider></mat-divider>
+  <button mat-menu-item>
+    <mat-icon>notifications_off</mat-icon>
+    <span>Disable alerts</span>
+  </button>
+</mat-menu>
+<button mat-icon-button [matMenuTriggerFor]="login">
+  <mat-icon><i class="material-icons">more_vert</i></mat-icon>
+</button>
+<mat-menu #login="matMenu">
+  <button mat-menu-item>
+    <mat-icon><i class="material-icons">person</i></mat-icon>
+    <span>Login</span>
+  </button>
+  <mat-divider></mat-divider>
+  <button mat-menu-item>
+    <mat-icon><i class="material-icons">person</i></mat-icon>
+    <span>Profile</span>
+  </button>
+  <mat-divider></mat-divider>
+  <button mat-menu-item>
+    <mat-icon>notifications_off</mat-icon>
+    <span>Disable alerts</span>
+  </button>
+</mat-menu>
+
+</mat-toolbar>
